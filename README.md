@@ -23,3 +23,6 @@ Just pass some env variables, fire it up and forget about it.
 ## Starting up
 
 Set your ENV vars and do a ```docker-compose up -d service-reporter```
+
+## License
+https://en.wikipedia.org/wiki/WTFPL
