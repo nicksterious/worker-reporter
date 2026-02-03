@@ -1,7 +1,8 @@
 version: '3.7'
 services:
   reporter:
-    build: .
+    from: flinkwise/worker-reporter:latest
+    restart: "always"
     environment:
      # required
      KEY: "${KEY:?key_is_required}"
