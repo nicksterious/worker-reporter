@@ -1,7 +1,9 @@
 FROM alpine/curl
 
-COPY src/ /
+COPY src/entrypoint.sh /
+
+RUN chmod 777 /entrypoint.sh
 
 WORKDIR /
 
-CMD docker-entrypoint.sh
+CMD entrypoint.sh

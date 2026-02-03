@@ -1,0 +1,18 @@
+version: '3.7'
+services:
+  reporter:
+    build: .
+    environment:
+     # required
+     KEY: "${KEY:?key_is_required}"
+     ENDPOINT_URL: "${ENDPOINT_URL:?endpoint_url_is_required}"
+     # optional
+     FREQUENCY: "${FREQUENCY:-60}"
+     SERVICE_HOST: "${SERVICE_HOST:-random.example.com}"
+     SERVICE_PORT: "${SERVICE_PORT:-3128}"
+     SERVICE_NAME: "${SERVICE_NAME:-new_proxy}"
+     SERVICE_TYPE: "${SERVICE_TYPE:-Proxy}"
+     USERNAME: "${USERNAME:-anonymous}"
+     PASSWORD: "${PASSWORD:-anonymous}"
+     TAGS: "${TAGS:-untagged}"
+
