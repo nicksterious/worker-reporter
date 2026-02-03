@@ -1,7 +1,7 @@
 version: '3.7'
 services:
   reporter:
-    from: flinkwise/worker-reporter:latest
+    image: flinkwise/worker-reporter:latest
     restart: "always"
     environment:
      # required
