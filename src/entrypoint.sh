@@ -48,8 +48,10 @@ fi
 
 echo "TAGS: $TAGS"
 
+# give squid some time to start
+sleep 30
+
 echo "Starting up..."
-sleep 1
 
 DATA="{\"key\":\"$KEY\",\"worker\":{\"tags\":\"$TAGS\", \"host\": \"$SERVICE_HOST\", \"port\": \"$SERVICE_PORT\", \"username\": \"$USERNAME\", \"password\": \"$PASSWORD\", \"type\": \"$SERVICE_TYPE\", \"name\":\"$SERVICE_NAME\"}}"
 
